@@ -1,4 +1,4 @@
 Code Directory.
-All your code should go here. Make sure files are named as explicitly as possible.
+All code for class is in this directory and my own (Andrew Haaland, N02762252)
 
 
