@@ -1,0 +1,1 @@
+I am running my Raspberry pi via the wireless adapter from AdaFruit to access my home network consisting of a Netgear R6300 wireless AC router which gets access from my Time Warner Cable provided UBEE Modem.
