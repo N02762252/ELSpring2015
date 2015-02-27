@@ -3,7 +3,7 @@ Andrew Haaland
 I am using dygraphs on my webpage so that I can display the temperature.  
 The temperatures far off because the entire time they had been logged, I had set up the program backward so the temperature was logging into the wrong column.
 I export a .csv file for the dygraph to use to get the information, and it is put into a raspberry pi webpage on my server.  The end result can be view @ cs.newpaltz.edu/~haalanda1/rasppitemp.
-
+*****NOTE: For some reason there is a glitch where this is only working fully in Google Chrome.  I will try to fix it but I'm not sure what's wrong!*****************
 The code for the HTML is below, and includes extra stuff to make it look like the rest of my site:
 <!DOCTYPE html>
 <html>
