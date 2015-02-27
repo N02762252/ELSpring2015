@@ -1,3 +1,53 @@
 Andrew Haaland
 								Web Server, and Temp graph
-Writeup coming soon!
+I am using dygraphs on my webpage so that I can display the temperature.  
+The temperatures far off because the entire time they had been logged, I had set up the program backward so the temperature was logging into the wrong column.
+I export a .csv file for the dygraph to use to get the information, and it is put into a raspberry pi webpage on my server.  The end result can be view @ cs.newpaltz.edu/~haalanda1/rasppitemp.
+
+The code for the HTML is below, and includes extra stuff to make it look like the rest of my site:
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Raspberry Pi Projects|Andrew Haaland: Computer Scientist and Technology Enthusiast in Kingston, NY Ulster Park, NY New York, NY</title>
+	<link type"text/css" rel="stylesheet" href="style.css">
+	<script type="text/javascript"
+ 	 src="dygraph-combined-dev.js"></script>
+</head>
+<body>
+<a href="index.html"><img src="Banner.png" class="header-image" width="750" height="125" alt="Andrew Haaland Banner"></a>
+<br>
+<br>
+<ul class="nav">
+<li class="nav"><a class="nav" href="index.html">Home</a></li>
+<li class="nav"><a class="nav" href="rasppi.html">Raspberry Pi Projects</a></li>
+<li class="nav"><a class="nav" href="resume.html">Resume</a></li>
+<li class="nav"><a class="nav" href="about.html">About</a></li>
+<li class="nav"><a class="nav" href="contact.html">Contact</a></li>
+</ul>
+<img src="sepB.png" class="header-image" width="820" height="" alt="Seperator for navigation">
+<br>
+<p class="home">Raspberry Pi Temperature monitor</p>
+
+<div class="center">
+<div ID="graphdiv"></div>
+<script type="text/javascript">
+  g = new Dygraph(
+
+    // containing div
+    document.getElementById("graphdiv"),
+
+    // CSV or path to a CSV file.
+    "out.csv"
+
+  );
+</script>
+</div>
+
+<br>
+<br>
+</body>
+</html>
+
+I got my code for the dyGraph creation from, http://dygraphs.com/tutorial.html
+
+ 
