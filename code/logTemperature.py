@@ -19,7 +19,7 @@ def readTemp():
 	try:
 		con = mydb.connect('/home/pi/temperature.db')
 		cur = con.cursor()    
-		cur.execute("INSERT INTO tempData VALUES(?,?,?);",(currentTime,tempF,tempC))
+		cur.execute("INSERT INTO tempData VALUES(?,?,?);",(currentTime,tempC,tempF))
 		con.commit();
 		con.close();
     	except mydb.Error, e:
